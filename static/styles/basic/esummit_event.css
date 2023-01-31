@@ -1,0 +1,263 @@
+/*
+
+Strip
+
+http://www.templatemo.com/tm-482-strip
+
+*/
+
+
+
+
+
+
+
+html {	font-size: 18px; }
+
+body {
+	background: url(../media/images/eSummit/strip-bg.jpg);
+	color: rgba(255,255,255,0.95);
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	padding-left: 60px;
+	padding-right: 60px;
+	/*overflow-x: hidden;*/
+}
+
+p { line-height: 2; }
+
+p:last-child { margin-bottom: 0; }
+
+.tm-img { padding: 15px; }
+
+
+.tm-container {
+	background-color: white;
+	padding: 30px 45px;
+	max-width: 1600px;
+}
+
+
+
+.tm-page-content { margin-top: 255px; }
+
+
+
+.tm-section {
+	background-position: bottom right;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	height: 600px;
+}
+
+
+
+#tm-section-2 {	background-image: url(../media/images/eSummit/strip-bg-02.jpg); }
+#tm-section-3 {	background-image: url(../media/images/eSummit/strip-bg-03.jpg); }
+
+
+.tm-section-header {
+	font-weight: 300;
+	margin-bottom: 30px;
+}
+
+.tm-white-curve-left,
+.tm-white-curve-right {
+	color: black;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+/* Fix for Safari 9.0.3 on Mac */
+.tm-white-curve-right {	margin-right: -1px; }
+
+.tm-white-curve-left,
+.tm-white-curve-right {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	padding-left: 0;
+}
+
+.tm-white-curve-left-rec,
+.tm-white-curve-left-circle,
+.tm-white-curve-right-rec,
+.tm-white-curve-right-circle {
+	position: absolute;
+	background-color: white;
+	height: 100%;
+}
+
+.tm-white-curve-left-rec,
+.tm-white-curve-right-rec {
+	width: 300px;
+}
+
+.tm-white-curve-left-circle {
+	width: 520px;
+	right: 0;
+	border-top-right-radius: 50%;
+	border-bottom-right-radius: 50%;
+}
+
+.tm-white-curve-right-rec {
+	padding-right: 0;
+	right: 0;
+}
+
+.tm-white-curve-right-circle {
+	width: 520px;
+	border-top-left-radius: 50%;
+	border-bottom-left-radius: 50%;
+}
+
+.tm-white-curve-text {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	padding-left: 50px;
+	width: 85%;
+	position: relative;
+	z-index: 100;
+}
+
+.tm-white-curve-right > .tm-white-curve-text {
+	margin-right: 0;
+	margin-left: auto;
+}
+
+.tm-flex-center {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+.thin-font { font-weight: 300; }
+
+
+
+
+
+.blue-text { color: #00599a; }
+.red-text { color: #882f33; }
+.gray-text { color: #333333; }
+.green-text {
+	color: #2A8885;
+	font-weight: 400;
+}
+
+
+
+
+
+@media screen and (max-width: 1300px) {
+	.tm-white-curve-left-circle,
+	.tm-white-curve-right-circle {
+		width: 445px;
+	}
+	.tm-contact-left { padding: 25px; }
+}
+
+@media screen and (max-width: 1199px) {
+
+	.tm-page-content { margin-top: 135px; }
+	.tm-home-right { padding: 80px 50px 50px 60px; }
+
+}
+
+@media screen and (max-width: 1060px) {
+	.tm-section {
+		display: block;
+		height: auto;
+	}
+
+	.tm-section .col-lg-7,
+	.tm-section .col-lg-5 {
+		width: 100%;
+	}
+
+	.tm-white-curve-left-rec,
+	.tm-white-curve-right-rec {
+		width: 60%;
+	}
+
+	.tm-white-curve-text {
+		padding-top: 2em;
+		padding-bottom: 2em;
+	}
+
+	.tm-white-curve-left-circle,
+	.tm-white-curve-right-circle {
+		width: 50%;
+	}
+
+	.tm-white-curve-left-circle { right: 1em; }
+	.tm-white-curve-right-circle { left: 1em; }
+
+	#tm-section-2,
+	#tm-section-3 {
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+	    -webkit-flex-direction: column;
+	        -ms-flex-direction: column;
+	            flex-direction: column;
+	    -webkit-justify-content: center;
+	        -ms-flex-pack: center;
+	            justify-content: center;
+	}
+
+	.tm-img { padding: 30px; }
+}
+
+@media screen and (max-width: 991px) {
+
+	.tm-page-content { margin-top: 100px; }
+
+
+
+}
+
+@media screen and (max-width: 800px) {
+	body {
+		background: none;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.tm-container {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.tm-white-curve-text { padding: 1.5em 1em; }
+	.tm-white-curve-right > .tm-white-curve-text {
+	    padding-right: 0;
+	    padding-left: 2em;
+	}
+
+	.tm-section-header {
+		font-size: 1.8em;
+		margin-bottom: 0.5em;
+	}
+
+	
+}

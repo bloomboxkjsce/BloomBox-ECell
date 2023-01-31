@@ -1,0 +1,1 @@
+web: gunicorn bloombox.wsgi --log-file -

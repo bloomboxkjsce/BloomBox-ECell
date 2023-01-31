@@ -1,0 +1,1538 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142291179-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-142291179-2');
+    </script>
+    <link rel="icon" type="image/ico" href="../media/images/eSummit/eS-white.png">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <meta name="description" content="BloomBox, E-Cell KJSCE is the student run non-profit organization Entrepreneurship promoting body at K. J. Somaiya College of Engineering, Mumbai">
+    <meta name="google-site-verification" content="sfZdBesrUXPWwnmytZsgEymdT_Brz2EvjYQ36cPVM94">
+    <meta name="keywords" content="BloomBox, E-Cell, ecell, KJSCE, k j  somaiya college of engineering, entrepreneurship, edc, entrepreneurship development cell, entrepreneurship cell">
+    <meta name="robots" content="INDEX, FOLLOW">
+    <meta name="author" content="Team BloomBox">
+    <meta name="geo.region" content="IN">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="canonical" href="">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400">   <!-- Google web font "Open Sans" -->
+    <title>E-Summit, KJSCE</title>
+
+    <!--CSS-->
+    <link href="{% static 'styles/basic/preloader.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/basic/aos.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/basic/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/basic/icofont/icofont.min.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/basic/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/basic/owl.carousel.min.css' %}" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="{% static 'styles/css/esummit.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/css/esummit-dividers.css' %}" rel="stylesheet">
+
+
+    <style>
+
+    /* ---- reset ---- */
+
+    html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font:normal 75% Arial, Helvetica, sans-serif;
+  max-width: 100%;
+    overflow-x: hidden;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #0E082C;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* ---- stats.js ---- */
+
+.count-particles{
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles{
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles{
+  -webkit-user-select: none;
+}
+
+#stats{
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles{
+  border-radius: 0 0 3px 3px;
+}
+
+    .first .btn, .third .btn, .fifth .btn, .seventh .btn{
+      background-color: #0E082C;
+      color: white;
+    }
+
+    .first .btn:hover, .third .btn:hover, .fifth .btn:hover, .seventh .btn:hover{
+        background-color: #EAE6FB;
+        color: black;
+    }
+
+    .second .btn, .fourth .btn, .sixth .btn, .eigth .btn{
+        background-color: #EAE6FB;
+        color: black;
+    }
+    .second .btn:hover, .fourth .btn:hover, .sixth .btn:hover, .eigth .btn:hover{
+      background-color: #0E082C;
+      color: white;
+    }
+
+    .second, .fourth, .sixth, .eigth, .sponsors{
+        background-color: #0E082C !important ;
+        color: white;
+    }
+
+    .first, .third, .fifth, .seventh, .faqs {
+      background-color: #EAE6FB !important;
+      color: black;
+    }
+
+
+
+
+
+    .custom-shape-divider-bottom-1647887648 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+        }
+
+        .custom-shape-divider-bottom-1647887648 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 130px;
+        }
+
+        .custom-shape-divider-bottom-1647887648 .shape-fill {
+        fill: #0E082C;
+        }
+
+        .custom-shape-divider-bottom-1647889025 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1647889025 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 130px;
+}
+
+.custom-shape-divider-bottom-1647889025 .shape-fill {
+    fill: #EAE6FB;
+}
+
+.custom-shape-divider-bottom-1647889422 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1647889422 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 130px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1647889422 .shape-fill {
+    fill: #000000;
+}
+
+.badge-info {
+    color: black !important;
+    background-color: #F69041 !important;
+}
+
+        .event-info{
+            margin-top: 60px;
+            font-size: 18px;
+        }
+        .badge-info{
+            height:30px;
+            font-size: 15px;
+            padding:7px 18px;
+            margin-left: -3px;
+        }
+        .modal-body .badge-success{
+            padding:6px 10px;
+            font-size: 15px;
+        }
+
+        .modal-header{
+            background-color: #0E082C;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .modal-body{
+            position: relative;
+        }
+        .shape-divi-modal .shape-fill {
+            fill: #000000;
+        }
+        .modal-dialog{
+            border: 1px solid white;
+            border-radius: 10px;
+        }
+        .modal-footer{
+            background-color: #0E082C;
+            padding: 15px 15px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        .modal-footer button{
+            margin: 5px;
+            background-color: #EAE6FB;
+            color: black;
+        }
+
+        .btn-secondary{
+          background-color: #EAE6FB !important;
+          color: black !important;
+        }
+
+        .btn-secondary:hover{
+            background-color: #0E082C !important;
+            color: white !important;
+        }
+        .modal-title{
+            color: white;
+        }
+
+        .banner-logo{
+            width: 400px;
+        }
+
+        @media (max-width:768px) {
+            .banner-logo{
+                width:330px;
+            }
+            .event-img{
+                margin-left:18px;
+                height:300px !important;
+                width: 300px !important;
+            }
+            .event-info{
+                font-size: 16px;
+            }
+            .custom-shape-divider-bottom-1647889025 svg {
+                height: 80px;
+            }
+
+            .custom-shape-divider-bottom-1647887648 svg {
+                height: 80px;
+            }
+        }
+
+
+        .campanies {
+            padding: 0 0 5rem 0;
+        }
+
+        .campanies__logo-box {
+            max-width: 100%;
+            height: 6rem;
+            margin-bottom: 2rem;
+            padding: 0.5rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .campanies__logo-box img {
+            height: 100%;
+        }
+
+        .campanies__logo-box img:hover {
+            filter: grayscale(120);
+        }
+
+        #checkButton{
+          display : flex;
+        }
+
+        #checkButton div{
+          -ms-flex: 1;  /* IE 10 */
+          flex: 1;
+        }
+
+
+    </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+
+<!-- stats - count particles -->
+<div class="count-particles">
+
+</div>
+        <!-- ======= Hero Section ======= -->
+        <section id="hero">
+            <div class="hero-container">
+                    <a href="/ESummit" class="hero-logo" data-aos="zoom-in">
+                        <img class='img-fluid banner-logo' src="../media/images/eSummit/esummit-07-white-07.png" alt="">
+                    </a>
+                    <h2 data-aos="fade-up">
+                        <i class="icofont-quote-left"></i>
+                        <b style='font-weight: 800; font-size: x-large;'>Innovate, Ideate, Elevate</b>
+                        <i class="icofont-quote-right"></i>
+                    </h2>
+
+
+                </div>
+        </section>
+        <!-- End Hero -->
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex align-items-center">
+        <div class="container">
+            <!-- The main logo is shown in mobile version only. The centered nav-logo in nav menu is displayed in desktop view  -->
+            <div class="logo d-block d-lg-none">
+                <a href="{% url 'index' %}"><img src="../media/images/basic/BloomBox, E-Cell KJSCE - Logo Small.png" alt="" class="img-fluid"></a>
+            </div>
+            <nav class="nav-menu d-none d-lg-block">
+                <ul class="nav-inner">
+                    <li><a href="{% url 'index' %}">Home<i class="icofont-home"></i></a></li>
+                    <li><a href="{% url 'campus' %}">Campus Company<i class="icofont-company"></i></a></li>
+                    <li><a href="{% url 'events' %}">Events<i class="icofont-brand-slideshare"></i></a></li>
+                    <li><a href="{% url 'enspire' %}">Enspire<i class="icofont-ebook"></i></a></li>
+                    <li class='centreLogo'><a href="{% url 'index' %}"><img style="height:40px;width:40px;" src="../media/images/basic/BloomBox, E-Cell KJSCE - Logo Small.png" alt=""></a> </li>
+                    <li class="active"><a href="{% url 'ESummit' %}">E-Summit 2022<i class="icofont-flag-alt-1"></i></i></a></li>
+                    <li><a href="{% url 'partners' %}">Partners<i class="icofont-handshake-deal"></i></a></li>
+                    <li><a href="{% url 'team' %}">Team Members<i class="icofont-people"></i></a></li>
+                    <li><a href="{% url 'about' %}">About<i class="icofont-question"></i></a></li>
+                </ul>
+            </nav>
+        <!--nav-menu -->
+        </div>
+    </header>
+    <!-- End Header -->
+
+
+    <!-- FIRST EVENT -->
+    <div class='first'>
+
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <center>
+              <div>
+                <h3 class="header-title-1">Events</h3>
+                <h5 class="mx-5">A great line up of never ending knowledge, learning and fun</h5>
+              </div>
+            </center>
+
+
+
+
+          <div class="container tm-container">
+
+            <div class='row'>
+                <div class='col-md-6'>
+                    <img class="img-fluid event-img" data-aos="fade-right" src='../media/images/eSummit/illustrations/Ennovate_Final-removebg-preview.png'>
+                </div>
+                <div class='col-md-6 event-info' data-aos="fade-left">
+                    <h3>Ennovate '22 &nbsp;<span class="badge badge-pill badge-danger" style="font-size: 18px; padding:3px 10px 4px 10px; -webkit-box-shadow: 5px 5px 5px -4px #000000;
+                        box-shadow: 5px 5px 5px -4px #000000; ">Flagship</span></h3>
+                        <br>
+
+
+                    <p style="margin-top:10px">The flagship event of BloomBox, Ennovate is the highlight of the E-Summit, but this time it has a different touch to it. Participants in this competition can choose any domain and come up with an ideal business model along with a prototype that will revolutionize the functioning of that domain and add value to it by making it easier for the dispenser’s as well as the receiver’s end.
+                        <br><br>
+                        <b><span style="color:rgb(255, 0, 0)">For the Prizes, Click on Know More.</span></b></p>
+
+                    <a href='/ESummitRegistration/1'><button type='button' class='btn'>Register</button></a>
+                    <button type='button' class='btn' data-toggle="modal" data-target="#exampleModal1">Know More</button>
+                </div>
+                <br><br><br><br>
+                <div class="custom-shape-divider-bottom-1647887648">
+                  <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
+                  </svg>
+                </div>
+                <!-- Modal -->
+
+                <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModal1Label" aria-hidden="true">
+
+                    <div class="modal-dialog modal-lg" role="document">
+
+                    <div class="modal-content">
+
+                                      <div class="modal-header" >
+<h5 class="modal-title"  id="exampleModal1Label">Ennovate '22</h5>
+
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style='color: white;'>
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+
+                            <p class='mt-3'>
+                                A Techno-Business competition, aimed at devising solutions to day-to-day problems, and creating a business plan out of the same. Ennovate is an absolute blend of Entrepreneurship, Innovation, and Technology, where students from every background come together to innovate and mold their ideas to real solutions and progressive business plans.
+                            </p>
+                            <p>
+                              <b>Event Flow:</b>
+                              <ol>
+                                  <li>Registration opens on 23rd March 2022</li>
+                                  <li>Domains for Ennovate ‘22 release on 23rd March 2022</li>
+                                  <li>Pre-Event on 5th April 2022</li>
+                                  <li>Last day of Round 1 Submission 8th April 2022</li>
+                                  <li>Top selected teams announced on 10th April 2022</li>
+                                  <li>Mentorship Round by Judges to improvise on the Prototype</li>
+                                  <li>Ennovate ‘22  final round will be held during the E-Summit</li>
+                              </ol>
+                            </p>
+                                <br>
+                            <p>
+                              <b>The Prestigious judging panel for the session are:</b>
+                              <ol>
+                                <li><b>Jeel Doshi</b><br>He is the Manager at Startup Innovation and investment at devx</li><br>
+                                <li><b>Rajiv Mathew</b><br>Head - Corporate Innovation and Market Connect at Oracle (JAPAC)</li><br>
+                                <li><b>Pratik Thakker</b><br>Founder & CEO at Webzoly, Israel Tech Ambassador to Israel, and TEDx Speaker<br>Over 150k followers on LinkedIn </li><br>
+                              </ol>
+                            </p>
+                            <center><span class="badge badge-pill badge-danger" style="padding:6px 10px;font-size: 15px;">Domain</span></center><br>
+
+                            <center>Open Innovation</center>
+                            <div class="mb-4"></div>
+
+                            <br>
+                            <div class='row text-center'>
+                                <div class='col-md-4 mb-4'>
+                                    <span class="badge badge-pill badge-info">Team Size</span>
+                                    <br><br> 1-4
+                                </div>
+                                <div class='col-md-4 mb-4'>
+                                    <span class="badge badge-pill badge-success" >Prize Structure</span>
+                                    <br><br>First Prize<br>Second Prize<br>Best Business Plan<br>Best Innovation
+                                </div>
+                                <div class='col-md-4 mb-4'>
+                                    <span class="badge badge-pill badge-info">Prizes Worth</span>
+                                    <br><br>Prizes worth INR 1 lakh+
+                                </div>
+                            </div>
+                            <p>
+                                <b>Perks of Participation:</b>
+                                <ol>
+                                    <li>Cash prizes</li>
+                                    <li>Certificates to the winning teams.</li>
+                                    <li>Digital participation certificate (for each team member).</li>
+                                    <li>An opportunity to network with our judges and mentors and
+                                        get insightful knowledge about the industry.</li>
+                                    <li>Internship Opportunities.</li>
+                                    <li>Win exciting goodies and vouchers.</li>
+
+                                </ol>
+                            </p>
+
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECOND EVENT -->
+    <div class='second'>
+        <div class="container">
+            <div class='row'>
+                <div class='col-md-6 event-info' data-aos="fade-right">
+                    <h3>What Went Wrong?</h3>
+                    <br>
+                    <span class="badge badge-pill badge-info"><i class="icofont-ui-calendar icofont-1x"></i> &nbsp;16th April, 2022</span>&nbsp;&nbsp;
+                    <span class="badge badge-pill badge-info"><i class="icofont-wall-clock icofont-1x"></i> &nbsp;10:00 am</span>
+
+                    <p style="margin-top:10px">
+                      <br>
+                        In order to successfully run a business, it’s important to know what precautions a company should take to avoid its downfall. As a part of E-Summit, BloomBox presents to you a Case Study Competition to comprehend how a company toppled and present a solution to it.
+                    </p>
+
+                    <a href='/ESummitRegistration/2'><button type='button' class='btn'>Register</button></a>
+                    <button type='button' class='btn' data-toggle="modal" data-target="#exampleModal2">Know More</button>
+                </div>
+                <div class='col-md-6'>
+                    <img class="img-fluid  event-img" src='../media/images/eSummit/illustrations/Zero to Hero Final.png' data-aos="fade-left" style='height: 500px; width: 500px; position: absolue; z-index: -1;'>
+                </div>
+                <div class="custom-shape-divider-bottom-1647889025">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z" class="shape-fill"></path>
+                    </svg>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModal2Label" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title"  id="exampleModal2Label">What Went Wrong?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style='color: white;'>
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body" style='color:black;'>
+                            <div class="shape-divi-modal">
+                              <div class="custom-shape-divider-bottom-1647889422">
+                                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                                    <path d="M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z" class="shape-fill"></path>
+                                </svg>
+                            </div>
+
+                            </div>
+                            <p class='mt-3'>
+                                 BloomBox as a part of E-Summit has come up with a case study competition where participants understand what went wrong with the company. Participants compete against each other to study what led to the downfall of various companies. The Winners of Round 1 will present a solution to the problems faced by the given company and test their entrepreneurship knowledge.
+                            </p>
+                            <center>
+
+
+                            </center>
+                            <p class='mt-3'>
+                                <b>Session Flow:</b>
+                                <ul>
+                                    <li>Registration starts on 26th March.</li>
+                                    <li>After Registration, each team chooses a domain and will research the company based on the domain and create a PDF.</li>
+                                    <li>Last date of Round 1 pdf submission is 10th April.</li>
+                                    <li>Top selected teams announced on 13th April.</li>
+                                    <li>Final Round will be held during the E-Summit.</li>
+                                </ul>
+                            </p>
+                            <p>
+                              <b>The Prestigious judging panel for the session are:</b>
+                              <ol>
+                                <li><b>Saurabh Mangrulkar</b><br>Founder at EventBeep</li><br>
+                                <li><b>Abhishek rana</b><br>Founder & CEO – Codenera</li><br>
+                                <li><b>Prateek Jain</b><br>Inception Program Community Manager at NVIDIA, Startups Incubator / Accelerator Enabler</li><br>
+                              </ol>
+                            </p>
+                            <div class="mb-4"></div>
+                        <div class='row text-center' style='color:black;'>
+                            <div class='col-md-4 mb-4'>
+                                <span class="badge badge-pill badge-info">Team Size</span>
+                                <br><br> 1-3
+                            </div>
+                            <div class='col-md-4 mb-4'>
+                                <span class="badge badge-pill badge-success" >Prize Structure</span>
+                                <br><br>First Prize<br>Second Prize<br>Third Prize<br>
+                            </div>
+                            <div class='col-md-4 mb-4'>
+                                <span class="badge badge-pill badge-info">Prizes Worth</span>
+                                <br><br>Prizes worth INR 30,000
+                            </div>
+                          </div>
+                          <div style='color:black;'>
+                        <p class="mx-3">
+                            <b>Perks of Participation:</b>
+                            <ol>
+                                <li>Cash prizes</li>
+                                <li>Certificates to the winning teams. (For each member)</li>
+                                <li>An opportunity to test your business knowledge and improve your research skills</li>
+                                <li>Win exciting goodies and vouchers.</li>
+
+                            </ol>
+                        </p>
+                        </div>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- THIRD EVENT -->
+    <div class='third' >
+
+        <div class="shape-divi-bottom">
+          <div class="custom-shape-divider-bottom-1647887648">
+  <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
+  </svg>
+</div>
+        </div>
+        <div class="container">
+            <div class='row'>
+                <div class='col-md-6' data-aos="fade-right">
+                    <img class="img-fluid  event-img" src='../media/images/eSummit/illustrations/Ideathon Final.png' style='height: 500px; width: 500px; position: absolue; z-index: -1;'>
+                </div>
+                <div class='col-md-6 event-info' data-aos="fade-left">
+                    <h3>Think Tank</h3>
+                    <br>
+                    <span class="badge badge-pill badge-info"><i class="icofont-ui-calendar icofont-1x"></i> &nbsp;15th April, 2022</span>&nbsp;&nbsp;
+                    <span class="badge badge-pill badge-info"><i class="icofont-wall-clock icofont-1x"></i> &nbsp;3:00 pm</span>
+<br>
+                    <p style="margin-top:10px">
+                      <br>
+                        Think Tank is a two-day-long competition where participants will be provided with problem statements that will revolve around ideas that need to be made more efficient with a touch of innovation; the birthplace of the innovation will be ideation. The competition will be in teams and teams will be given 45 minute to think of a creative solution to a particular problem and the shortlisted teams would be pitching the solutions in the second round.
+                    </p>
+
+                    <a href='/ESummitRegistration/3'><button type='button' class='btn'>Register</button></a>
+                    <button type='button' class='btn' data-toggle="modal" data-target="#exampleModal3">Know More</button>
+                </div>
+                <div class="custom-shape-divider-bottom-1647887648">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
+    </svg>
+</div>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content ">
+                        <div class="modal-header">
+                        <h5 class="modal-title"  id="exampleModal3Label">Think Tank</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style='color: white;'>
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body" style='color:black;'>
+                            <p class='mt-3'>
+                                 To learn the process of thinking and pitching your ideas into the next big thing, BloomBox is here with an ideation competition with an exciting twist based on one of the most popular trends in India. The event will consist of a problem and the participants need to think about a solution in 45 minutes. For the second round, the participants will come up with a pitch to the judges to gain equity in their idea and discuss its future prospects.
+                            </p>
+                            <p>
+                                <b>Event Flow:</b>
+                                <ol>
+                                    <li>All participants will be present in a online meeting</li>
+
+                                    <li>Organizer will ask the participants to select one Problem Statements </li>
+                                    <li>Participants will be given 45 mins to generate a solution for each Problem statement and submit it in via a google form</li>
+                                    <li>Top Selected teams to be announced on the basis on how innovative the solutions are on the same day</li>
+                                    <li>Selected Teams to pitch their solutions in front of the panel of potential investors and convince them.</li>
+                                </ol>
+                            </p>
+                            <br>
+                            <p>
+                              <b>The Prestigious judging panel for the session are:</b>
+                              <ol>
+                                <li><b>Ankit Mehra</b><br>CEO and founder of GyanDhan- India’s first education financing marketplace</li><br>
+                                <li><b>Nikhil Jain</b><br>Co-founder & COO ForeignAdmits</li><br>
+                              </ol>
+                            </p>
+                            <div class="mb-4"></div>
+                            <div class='row text-center'>
+                                <div class='col-md-4 mb-4'>
+                                    <span class="badge badge-pill badge-info">Team Size</span>
+                                    <br><br> 2-4
+                                </div>
+                                <div class='col-md-4 mb-4'>
+                                    <span class="badge badge-pill badge-success">Prize Structure</span>
+                                    <br><br>1st Prize<br>2nd Prize<br>3rd Prize
+                                </div>
+                                <div class='col-md-4 mb-4'>
+                                    <span class="badge badge-pill badge-info">Prizes Worth</span>
+                                    <br><br>Prizes worth INR 30,000
+                                </div>
+                            </div>
+                            <p>
+                                <b>Perks of Participation:</b>
+                                <ol>
+                                    <li>Cash prizes</li>
+                                    <li>Certificates to the winning teams.</li>
+                                    <li>Digital participation certificate (for each team member).</li>
+                                    <li>An opportunity to learn to Generate Ideas and Convince
+                                        others to Like your Idea</li>
+                                    <li>Win exciting goodies and vouchers.</li>
+
+                                </ol>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOURTH EVENT -->
+    <div class='fourth'>
+        <div class="container">
+            <div class='row'>
+                <div class='col-md-6 event-info' data-aos="fade-right">
+                    <h3>Brand Wars</h3>
+                    <br>
+                    <span class="badge badge-pill badge-info"><i class="icofont-ui-calendar icofont-1x"></i> &nbsp;15th April, 2022</span>&nbsp;&nbsp;
+                    <span class="badge badge-pill badge-info"><i class="icofont-wall-clock icofont-1x"></i> &nbsp;11:00 am</span>
+                    <p style="margin-top:10px">
+                      <br>
+                        All must have heard about the marketing battle of Coke vs Pepsi and thought “What a comeback”. So here is your chance to create and be a part of one! Brand Wars is a two-day-long competition where participants will compete against each other as brands, but with a fun twist. The brands allotted to teams will be switched up from their actual domain to a new one (Eg. Nike as a Food Company) and participants will have to plan a crazy marketing strategy for building their alternate brand and eventually engaging in a witty combat to emerge as the superior one!
+                    </p>
+
+                    <a href='/ESummitRegistration/4'><button type='button' class='btn'>Register</button></a>
+                    <button type='button' class='btn' data-toggle="modal" data-target="#exampleModal4">Know More</button>
+                </div>
+                <div class='col-md-6'>
+                    <img class="img-fluid  event-img" src='../media/images/eSummit/illustrations/BrandWars.png' data-aos="fade-left" style='height: 500px; width: 500px; position: absolue; z-index: -1;'>
+                </div>
+                <div class="custom-shape-divider-bottom-1647889025">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z" class="shape-fill"></path>
+    </svg>
+</div>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModal4Label" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title"  id="exampleModal4Label">Brand Wars</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style='color: white;'>
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body" style='color:black;'>
+
+                            <p class='mt-3'>
+                                 - All must have heard about the marketing battle of Coke vs Pepsi and thought “What a comeback”. So here is your chance to create and be a part of one! Brand Wars is a two-day-long competition where participants will compete against each other as brands, but with a fun twist. The brands allotted to teams will be switched up from their actual domain to a new one (Eg. Nike as a Food Company) and participants will have to plan a crazy marketing strategy for building their alternate brand and eventually engaging in a witty combat to emerge as the superior one!
+                            </p>
+
+                            <p>
+                                <b>Event Flow:</b>
+                                <ol>
+                                    <li>All participants will be present in an online meeting</li>
+                                    <li>The organizer will give participants a problem statement form to create a poster and describe their company in a catchy way.</li>
+                                    <li>Participants will be given 45 mins to think of an innovative way to present their brand that can spark a hint of peaked interest for viewers.</li>
+                                    <li>The corresponding poster and content submitted will be hosted on an instagram page and the participants have to get as many people to like, comment and promote their brand as possible in a span of 24 hours. </li>
+                                    <li>The second round will be the pitching round in front of a Judge and a coordinator against another team.</li>
+                                    <li>Here both the teams will present their marketing strategy and convince the judge as to why their brand is the best.</li>
+                                </ol>
+                            </p>
+                            <br>
+                            <p>
+                              <b>The Prestigious judging panel for the session are:</b>
+                              <ol>
+                                <li><b>Sangeeta Nagpure</b><br>Assistant Professor in Department of IT</li><br>
+                                <li><b>Dipti Pawde</b><br>Assistant Professor in Department of IT</li><br>
+                              </ol>
+                            </p>
+                            <div class="mb-4"></div>
+                            <div class='row text-center'>
+                                <div class='col-md-4 mb-4'>
+                                    <span class="badge badge-pill badge-info">Team Size</span>
+                                    <br><br> 1-3
+                                </div>
+                                <div class='col-md-4 mb-4'>
+                                    <span class="badge badge-pill badge-success">Prize Structure</span>
+                                    <br><br>1st Prize<br>2nd Prize
+                                </div>
+                                <div class='col-md-4 mb-4'>
+                                    <span class="badge badge-pill badge-info">Prizes Worth</span>
+                                    <br><br>Prizes worth INR 30,000
+                                </div>
+                            </div>
+                            <p>
+                                <b>Perks of Participation:</b>
+                                <ol>
+                                    <li>Cash prizes</li>
+                                    <li>Certificates to the winning teams (for each team member).</li>
+                                    <li>An opportunity to learn how to generate interesting marketing strategies and convince others.</li>
+                                    <li>Win exciting goodies and vouchers.</li>
+
+                                </ol>
+                            </p>
+
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FIFTH EVENT -->
+    <div class='fifth'>
+
+        <div class="shape-divi-bottom">
+          <div class="custom-shape-divider-bottom-1647887648">
+  <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
+  </svg>
+</div>
+        </div>
+
+        <div class="container">
+            <div class='row'>
+                <div class='col-md-6' data-aos="fade-right">
+                    <img class="img-fluid event-img" src='../media/images/eSummit/illustrations/Social Event Final.png' style='height: 500px; width: 500px; position: absolue; z-index: -1;'>
+                </div>
+                <div class='col-md-6 event-info' data-aos="fade-left">
+                    <h3>Sociathon</h3>
+                    <br>
+                    <span class="badge badge-pill badge-info"><i class="icofont-ui-calendar icofont-1x"></i> &nbsp;15th April, 2022</span>&nbsp;&nbsp;
+                    <span class="badge badge-pill badge-info"><i class="icofont-wall-clock icofont-1x"></i> &nbsp;1:00 pm</span>
+                    <p style="margin-top:10px"><br>A competition for a cause. Unlike other competitions where the participation is for winning and gaining experience, this competition will also promote, encourage and foster the idea of social entrepreneurship which is defined as an approach by individuals, groups, start-up companies or entrepreneurs, in which they develop, fund and implement solutions to social, cultural, or environmental issues. In this competition, the participants are expected to come up with an idea that resolves an issue pertaining to social entrepreneurship</p>
+
+                    <a href='/ESummitRegistration/5'><button type='button' class='btn'>Register</button></a>
+                    <button type='button' class='btn' data-toggle="modal" data-target="#exampleModal5">Know More</button>
+                </div>
+                <div class="custom-shape-divider-bottom-1647887648">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
+    </svg>
+</div>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModal5Label" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title"  id="exampleModal5Label">Sociathon</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style='color: white;'>
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body" style='color:black;'>
+
+                            <p class='mt-3'>
+                                 It will start with a speaker/panel session where you will understand everything about social entrepreneurship, its WHY, WHEN, WHAT, WHERE, HOW, and FOR. This knowledge will help you in all the rounds of the competition. You will get an opportunity to apply this knowledge to practical use through this competition. It will consist of 2 rounds on only one single domain - Social entrepreneurship<br>
+                                <ul>
+                                  <li>Round 1 - You have to decide on a problem, find a solution, prepare a business plan around it, show the impact and everything that you can think of. </li>
+                                  <li>Round 2 - Selected teams will be given problem statements by us 30-45 min before. You then have to speak about the problem, ideated solution, approach, impact, etc for around 2-3 minutes. </li>
+
+                                </ul>
+                                Results will be announced by judges later on!
+                            </p>
+                            <br>
+                            <p>
+                              <b>The Prestigious judging panel for the session are:</b>
+                              <ol>
+                                <li><b>Srishti Sharma</b><br>Social Entrepreneur and a social activist<br>Founder at GAME</li><br>
+                                <li><b>Madhavi Jha Prasad</b><br>Social Entrepreneur<br>Founder-Aahanaa Heritage Foundation</li><br>
+                              </ol>
+                            </p>
+                            <p>
+                              <b>Speaker Session:</b><br><br>
+                              <b>Kuldeep Tripathi: </b><br>Worked as Head-CSR with NGOs on CSR Projects<br>Affiliated with CASI Global, New York<br>
+                            </p>
+
+                            <div class="mb-4"></div>
+                            <div class='row text-center'>
+                                <div class='col-md-4 mb-4'>
+                                    <span class="badge badge-pill badge-info">Team Size</span>
+                                    <br><br> 2-3
+                                </div>
+                                <div class='col-md-4 mb-4'>
+                                    <span class="badge badge-pill badge-success">Prize Structure</span>
+                                    <br><br>1st Prize<br>2nd Prize<br>3rd Prize
+                                </div>
+                                <div class='col-md-4 mb-4'>
+                                    <span class="badge badge-pill badge-info">Prizes Worth</span>
+                                    <br><br>Prizes worth INR 30,000
+                                </div>
+                            </div>
+                            <p>
+                                <b>Perks of Participation:</b>
+                                <ol>
+                                    <li>Cash prizes</li>
+                                    <li>Certificates to the winning teams.</li>
+                                    <li>Digital participation certificate (in name of each team member).</li>
+                                    <li>An opportunity to learn about Social Entrepreneurship</li>
+                                    <li>Win exciting goodies and vouchers.</li>
+                                </ol>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SIXTH EVENT -->
+    <div class='sixth'>
+        <div class="container">
+            <div class='row'>
+                <div class='col-md-6 event-info' data-aos="fade-right">
+                    <h3>Let's Talk Finance</h3>
+                    <br>
+                    <span class="badge badge-pill badge-info"><i class="icofont-ui-calendar icofont-1x"></i> &nbsp;15th April, 2022</span>&nbsp;&nbsp;
+                    <span class="badge badge-pill badge-info"><i class="icofont-wall-clock icofont-1x"></i> &nbsp;5:00 pm</span>
+                    <p style="margin-top:10px">
+                      <br>
+                      A webinar that shows how to get started with financial investments. In the fast-paced world where everyone talks about how passive income is crucial, it is wise to start investing in the endless, untapped and emerging sources as early as possible. The session will emphasize how to get started with investing and where to invest. There is an adage that goes, “Do not put all your eggs in one basket.” Starting to invest early will not only help you tackle present economic challenges, but those that will be coming in subsequent times.
+                    </p>
+
+                    <a href='/ESummitRegistration/6'><button type='button' class='btn'>Register</button></a>
+                    <button type='button' class='btn' data-toggle="modal" data-target="#exampleModal6">Know More</button>
+
+
+                </div>
+                <div class='col-md-6' data-aos="fade-left">
+                    <img class="img-fluid  event-img" src='../media/images/eSummit/illustrations/Personal Finance Final.png' style='height: 500px; width: 500px; position: absolue; z-index: -1;'>
+                </div>
+                <div class="custom-shape-divider-bottom-1647889025">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z" class="shape-fill"></path>
+        </svg>
+    </div>      <!-- Modal -->
+                <div class="modal fade" id="exampleModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModal6Label" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title"  id="exampleModal6Label">Let's Talk Finance</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style='color: white;'>
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body" style='color:black;'>
+
+                            <p class='mt-3'>
+
+                                 “Do something today that your future self will thank you for.” The average person thinks about getting started with investing but never does. The reasons might be endless, they might be unable to understand the jargon or are worried about the risks involved. In order to help everyone kickstart their investment journey with a clear state of mind, BloomBox brings to you a session to decode investments.
+                            </p>
+
+                            <center>
+                            <span class="badge badge-pill badge-danger" style="padding: 6px 10px; font-size: 15px;">Speaker: Mr. Monil Shah</span>
+                            <br><br>
+                            <i>CEO & CO-FOUNDER at </i><b>KEEV,</b> which makes algorithmic trading simple.<br>
+                            Alumnus of <i>K.J. SOMAIYA INSTITUTE OF MANAGEMENT STUDIES AND RESEARCH.</I>
+                          </center>
+
+                            <p class='mt-3'>
+                                <b>Topics to be Covered in the Webinar:</b>
+                                <ul>
+                                    <li>Earning Money</li>
+                                    <li>Compounding</li>
+                                    <li>Managing our money</li>
+                                    <li>Jargons related to investments</li>
+                                    <li>Savings and Investment plans and methods</li>
+                                    <li>Financial Independence</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SEVENTH EVENT -->
+    <div class='seventh'>
+        <div class="container">
+          <div class="custom-shape-divider-bottom-1647887648">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
+    </svg>
+</div>
+            <div class='row'>
+
+                <div class='col-md-6' data-aos="fade-right">
+                    <img class="img-fluid  event-img" src='../media/images/eSummit/illustrations/Influencer.png' style='height: 500px; width: 500px; position: absolue; z-index: -1;'>
+                </div>
+                <div class='col-md-6 event-info' data-aos="fade-left">
+                    <h3>The Subtle Art Of Influencership</h3>
+                    <br>
+                    <span class="badge badge-pill badge-info"><i class="icofont-ui-calendar icofont-1x"></i> &nbsp;16th April, 2022</span>&nbsp;&nbsp;
+                    <span class="badge badge-pill badge-info"><i class="icofont-wall-clock icofont-1x"></i> &nbsp;5:00 pm</span>
+                    <p style="margin-top:10px">
+                      <br>
+                      In this age where it is so challenging to keep up with changes and just as thrilling to keep discovering new ones, everyone wants to put forth to the world their interests and build a community out of it. Hence the exciting topic of Influential Entrepreneurship for our webinar as a part of E-Summit.
+                    </p>
+
+                    <a href='/ESummitRegistration/7'><button type='button' class='btn'>Register</button></a>
+                    <button type='button' class='btn' data-toggle="modal" data-target="#exampleModal7">Know More</button>
+
+
+                </div>
+                <div class="custom-shape-divider-bottom-1647887648">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
+    </svg>
+</div>
+    <!-- Modal -->
+                <div class="modal fade" id="exampleModal7" tabindex="-1" role="dialog" aria-labelledby="exampleModal7Label" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title"  id="exampleModal6Label">The Subtle Art Of Influencership</h5>
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style='color: white;'>
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body" style='color:black;'>
+                            <p class='mt-3'>
+                                 During the pandemic times, there is one industry that has boomed so much that every young adult has been swooped into its culture and trends. It’s none other than the widespread impact of social media. What is the one thing you check when you’re following people on Instagram? The number of people who’re following them and the kind of content they’re creating. <br>
+                                 This session is for all those emerging influencers out there who want to portray their individualism as a brand and learn how to target a certain persona of the audience while making a living out of it. The speaker will be a renowned person from the same field of expertise to guide interested budding influential entrepreneurs on how to get started, counter roadblocks and make it big on a virtual front.
+                            </p>
+                            <center>
+                            <span class="badge badge-pill badge-danger" style="padding: 6px 10px; font-size: 15px;">Speaker: Mr. Deepak Pareek</span>
+                            <br><br>
+                            He is a content creator in the domain of <b>personal growth</b>, an Entrpreneur and the <i>co-founder</i> of <b>careerkeeda</b> as well as a <b>5x Tedx speaker.</b>
+                          </center>
+
+                            <p class='mt-3'>
+                                <b>Topics to be Covered in the Webinar:</b>
+                                <ul>
+                                    <li>What is influencer marketing and how has its impact grown over the years</li>
+                                    <li>How can one be an entrepreneur and market their personality and themselves as a brand</li>
+                                    <li>What are the difficulties that one might encounter and how to tackle them on the journey</li>
+                                    <li>Some personal anecdotes from the life of the speaker</li>
+                                    <li>Interactive and fun QnA with the speaker to get your doubts cleared to kickstart your journey!</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- EIGTH EVENT -->
+    <div class='eigth'>
+         <div class="container">
+            <div class='row'>
+
+                <div class='col-md-6 event-info' data-aos="fade-right">
+                    <h3>Mock Crypto Trading Contest</h3><br>
+                    <span class="badge badge-pill badge-info"><i class="icofont-ui-calendar icofont-1x"></i> &nbsp;10th April, 2022 - 15th April, 2022</span>&nbsp;&nbsp;
+                    <span class="badge badge-pill badge-info"><i class="icofont-wall-clock icofont-1x"></i> &nbsp;12:00 pm</span>
+                    <p style="margin-top:10px"><br>
+                        An event that will introduce you to the next big thing so that you don’t get left behind in the race of being the next global leader. Cryptocurrency trading will not only educate you about the fundamentals of cryptocurrency but will also aim to make you street smart by helping you trade in counterfeit cryptocurrency that will challenge as well as educate you about the condition of the current crypto market.
+                    </p>
+
+                    <a href='/ESummitRegistration/8'><button type='button' class='btn'>Register</button></a>
+                    <button type='button' class='btn' data-toggle="modal" data-target="#exampleModal8">Know More</button><br>
+                </div>
+                <div class='col-md-6' data-aos="fade-left">
+                    <img class="img-fluid  event-img" src='../media/images/eSummit/illustrations/Crypto Final.png' style='height: 500px; width: 500px; position: absolue; z-index: -1;'>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal8" tabindex="-1" role="dialog" aria-labelledby="exampleModal8Label" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title"  id="exampleModal7Label">Mock Crypto Trading Contest</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style='color: white;'>
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body" style='color:black;'>
+
+                            <p class='mt-3'>
+                                Cryptocurrency Trading is the future of Investments in today's World. The increasing Popularity of Crypto Trading results in a frequent fluctuation of the Prices of these Currencies, making investment in them a Task requiring High Skill and Study. For this, BloomBox is here with its Virtual Cryptocurrency Trading Event where the Participants will get a Hands on Experience with Cryptocurrency Trading without Actually Investing their Money.
+
+                            </p>
+                            <p>
+                                <b>Event Flow:</b>
+                                <ol>
+                                    <li>Participants will Watch a tutorial video shared Publicly by
+                                        BloomBox to learn the Basics of Crypto Trading</li>
+                                    <li>They will have to download and Register themselves on the
+                                        App and Participate on the BloomBox page in the app</li>
+                                    <li>The Participants will get 5 days time to Trade Cryptocurrency
+                                        on the App with the Virtual Cash given to them in the App</li>
+                                    <li>Participants can view their Profits & Leaderboards on the app</li>
+                                    <li>After a week, the Top 3 Traders according to the Leaderboard
+                                        will be Rewarded with Cash Prizes and Vouchers.</li>
+                                </ol>
+                            </p>
+                            <div class="mb-4"></div>
+                            <div class='row text-center'>
+                                <div class='col-md-4 mb-4'>
+                                    <span class="badge badge-pill badge-info">Team Size</span>
+                                    <br><br> 1
+                                </div>
+                                <div class='col-md-4 mb-4'>
+                                    <span class="badge badge-pill badge-success">Prize Structure</span>
+                                    <br><br>1st Prize<br>2nd Prize<br>3rd Prize
+                                </div>
+                                <div class='col-md-4 mb-4'>
+                                    <span class="badge badge-pill badge-info">Prizes Worth</span>
+                                    <br><br>Prizes to be revealed soon!
+                                </div>
+                            </div>
+                            <p>
+                                <b>Perks of Participation:</b>
+                                <ol>
+                                    <li>Cash prizes</li>
+                                    <li>Certificates to the winning teams.</li>
+                                    <li>An opportunity to Learn Cryptocurrency Trading and
+                                        Experience it Firsthand.</li>
+                                    <li>Win exciting goodies and vouchers.</li>
+
+                                </ol>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <br><br>
+    </div>
+    <br><br>
+
+    <section id="campanies" class="campanies">
+        <div class="container">
+            <center>
+                <div>
+                    <h3 class="header-title-2">Our Partners</h2>
+                    <p>With their unwavering support we execute Events, garner talent & create Entrepreneurs.</p>
+                </div>
+            </center>
+        </div>
+        <!-- START THE CAMPANIES CONTENT  -->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-3">
+              <div class="campanies__logo-box shadow-sm">
+                <a href="http://rcity.co.in/"><img src="../media/images/sponsors/ESummit-22/E-Summit Sponsor Logos/R City_Title Sponsor.png" alt="RCity" title="RCity" class="img-fluid"></a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="campanies__logo-box shadow-sm">
+                <a href="https://www.bolstart.com/"><img src="../media/images/sponsors/ESummit-22/E-Summit Sponsor Logos/bolstart.jpeg" alt="Bolstart" title="Bolstart" class="img-fluid"></a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="campanies__logo-box shadow-sm">
+                <a href="https://www.elearnmarkets.com/"><img src="../media/images/sponsors/ESummit-22/E-Summit Sponsor Logos/elearnmarkets.jpeg" alt="ElearnMarkets" title="ElearnMarkets" class="img-fluid"></a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="campanies__logo-box shadow-sm">
+                <img src="../media/images/sponsors/ESummit-22/E-Summit Sponsor Logos/Ensemble_Digital Media Partner.jpeg" alt="Ensemble" title="Ensemble" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="campanies__logo-box shadow-sm">
+                <a href="https://www.ideapreneurindia.com/"><img src="../media/images/sponsors/ESummit-22/E-Summit Sponsor Logos/Ideapreneur_Digital Media Partner.jpeg" alt="IdeapreneurIndia" title="IdeapreneurIndia" class="img-fluid"></a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="campanies__logo-box shadow-sm">
+                <img src="../media/images/sponsors/ESummit-22/E-Summit Sponsor Logos/UK14.jpg" alt="UK14 Ice Cream" title="UK14 Ice Cream" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="campanies__logo-box shadow-sm">
+                  <a href="https://www.yugantardarpan.in/"><img src="../media/images/sponsors/ESummit-22/E-Summit Sponsor Logos/yugantar.jpeg" alt="Yugantar Darpan" title="Yugantar Darpan" class="img-fluid"></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="campanies__logo-box shadow-sm">
+                  <img src="../media/images/sponsors/ESummit-22/E-Summit Sponsor Logos/Cafe_Chocday.jpg" alt="Cafe ChocDay" title="Cafe ChocDay" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="campanies__logo-box shadow-sm">
+                  <a href="https://www.chaturideas.com/"><img src="../media/images/sponsors/ESummit-22/E-Summit Sponsor Logos/Chatur Ideas.png" alt="Chatur Ideas" title="Chatur Ideas" class="img-fluid"></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="campanies__logo-box shadow-sm">
+                  <a href="https://www.codingninjas.com/"><img src="../media/images/sponsors/ESummit-22/E-Summit Sponsor Logos/CN-PNG.png" alt="Coding Ninjas" title="Coding Ninjas" class="img-fluid"></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="campanies__logo-box shadow-sm">
+                  <a href="https://easyshiksha.com/"><img src="../media/images/sponsors/ESummit-22/E-Summit Sponsor Logos/Easysiksha.png" alt="Easy Shiksha" title="Easy Shiksha" class="img-fluid"></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="campanies__logo-box shadow-sm">
+                  <a href="https://www.otwovillas.com/"><img src="../media/images/sponsors/ESummit-22/E-Summit Sponsor Logos/O2_Villas.png" alt="O2 Villas" title="O2 Villas" class="img-fluid"></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="campanies__logo-box shadow-sm">
+                  <a href="https://www.startupnews.fyi/"><img src="../media/images/sponsors/ESummit-22/E-Summit Sponsor Logos/Startupnews_Media Partner.jpg" alt="StartupNews.FYI" title="StartupNews.FYI" class="img-fluid"></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="campanies__logo-box shadow-sm">
+                  <a href="https://www.truscholar.io/"><img src="../media/images/sponsors/ESummit-22/E-Summit Sponsor Logos/truScholar.jpg" alt="TruScholar" title="TruScholar" class="img-fluid"></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="campanies__logo-box shadow-sm">
+                  <img src="../media/images/sponsors/ESummit-22/E-Summit Sponsor Logos/Navyuvak.jpeg" alt="Navyuvak Delhi" title="Navyuvak Delhi" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="campanies__logo-box shadow-sm">
+                  <a href="https://thebelgianwaffle.co/"><img src="../media/images/sponsors/ESummit-22/E-Summit Sponsor Logos/BelgianWaffle.jpg" alt="Belgian Waffle" title="Belgian Waffle" class="img-fluid"></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="campanies__logo-box shadow-sm">
+                  <a href="https://www.geeksforgeeks.org/"><img src="../media/images/sponsors/ESummit-22/E-Summit Sponsor Logos/GFG.png" alt="GeeksForGeeks" title="GeeksForGeeks" class="img-fluid"></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="campanies__logo-box shadow-sm">
+                  <a href="https://prepp.in/"><img src="../media/images/sponsors/ESummit-22/E-Summit Sponsor Logos/Prepp.png" alt="Prepp" title="Prepp" class="img-fluid"></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="campanies__logo-box shadow-sm">
+                  <a href="https://zoutons.com/"><img src="../media/images/sponsors/ESummit-22/E-Summit Sponsor Logos/Zoutons.png" alt="Zoutons.com" title="Zoutons.com" class="img-fluid"></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="campanies__logo-box shadow-sm">
+                  <img src="../media/images/sponsors/ESummit-22/E-Summit Sponsor Logos/PMSC.jpeg" alt="Pure Milk & Snacks Center" title="Pure Milk & Snacks Center" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="campanies__logo-box shadow-sm">
+                  <a href="https://thebroadcastmedia.com/"><img src="../media/images/sponsors/ESummit-22/E-Summit Sponsor Logos/TBM.PNG" alt="The Broadcast Media" title="The Broadcast Media" class="img-fluid"></a>
+                </div>
+            </div>
+
+          </div>
+        </div>
+      </section> >
+
+
+
+    <div class='faqs'>
+
+
+
+        <div class="container demo" id="FAQ" data-aos="fade-up" data-aos-delay="300">
+        <div class="section-title" data-aos="fade-up">
+            <center><h3 class="header-title-3">Frequently Asked Questions</h3></center>
+        </div><br><br>
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                        <a class="text-left" role="button" data-toggle="collapse" data-parent="#accordion"
+                            href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <i class="icofont-plus more-less"></i> What is E-Summit?
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                        BloomBox is here with the second edition of E-Summit of KJSCE to promote Entrepreneurship among young minds.
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title">
+                        <a class="collapsed text-left" role="button" data-toggle="collapse" data-parent="#accordion"
+                            href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <i class="icofont-plus more-less"></i> Who can be a part of this E-Summit?
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="panel-body">
+                        All undergrads can participate in the Summit.
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingThree">
+                    <h4 class="panel-title">
+                        <a class="collapsed text-left" role="button" data-toggle="collapse" data-parent="#accordion"
+                            href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <i class="icofont-plus more-less"></i> Is there any registration fees for any event of E-Summit?
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                    <div class="panel-body">
+                        No, there's no registration fees for any of the event as we are a Non-Profit Organization.
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingFour">
+                    <h4 class="panel-title">
+                        <a class="collapsed text-left" role="button" data-toggle="collapse" data-parent="#accordion"
+                            href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <i class="icofont-plus more-less"></i> Is there a limit on number of events once can participate in?
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                    <div class="panel-body">
+                        No, there's no limit on the number of events one can participate in.
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingFive">
+                    <h4 class="panel-title">
+                        <a class="collapsed text-left" role="button" data-toggle="collapse" data-parent="#accordion"
+                            href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            <i class="icofont-plus more-less"></i> Will the events be held online or offline?
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                    <div class="panel-body">
+                        The entire E-Summit will be held in an online mode apart from the Pre-Event which will be held in hybrid mode.
+                    </div>
+                </div>
+            </div> -->
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingSix">
+                    <h4 class="panel-title">
+                        <a class="collapsed text-left" role="button" data-toggle="collapse" data-parent="#accordion"
+                            href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            <i class="icofont-plus more-less"></i> Should all team members be of same college for any event?
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                    <div class="panel-body">
+                        No, there's no such necessity but all the team members should be undergrads.
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingSeven">
+                    <h4 class="panel-title">
+                        <a class="collapsed text-left" role="button" data-toggle="collapse" data-parent="#accordion"
+                            href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                            <i class="icofont-plus more-less"></i> On what platforms will the events be held on?
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                    <div class="panel-body">
+                        Events will be held on various platforms like Google Meet, Zoom and Microsoft Teams.
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingEight">
+                    <h4 class="panel-title">
+                        <a class="collapsed text-left" role="button" data-toggle="collapse" data-parent="#accordion"
+                            href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                            <i class="icofont-plus more-less"></i> Will the events be held in offline or online mode?
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+                    <div class="panel-body">
+                        The entire E-Summit will be held in an online mode apart from the Pre-Event which will be held in hybrid mode.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-10">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 footer-links">
+                                <h4>Useful Links</h4>
+                                <ul>
+                                    <li><i class="bx bx-chevron-right"></i> <a href="{% url 'index' %}">Home</a></li>
+                                    <li><i class="bx bx-chevron-right"></i><a href="{% url 'campus' %}">Campus Company</a></li>
+                                    <li><i class="bx bx-chevron-right"></i><a href="{% url 'events' %}">Events</a></li>
+                                    <li><i class="bx bx-chevron-right"></i><a href="{% url 'enspire' %}">Enspire</a></li>
+                                    <li><i class="bx bx-chevron-right"></i><a href="{% url 'ESummit' %}">E-Summit '21</a></li>
+                                    <li><i class="bx bx-chevron-right"></i><a href="{% url 'partners' %}">Partners</a></li>
+                                    <li><i class="bx bx-chevron-right"></i><a href="{% url 'team' %}">Team Members</a></li>
+                                    <li><i class="bx bx-chevron-right"></i><a href="{% url 'about' %}">About</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 col-md-6 footer-contact">
+                                <h4>Contact Us</h4>
+                                <p>
+                                    KJ Somaiya College of Engineering<br>Vidyanagar, Vidyavihar<br> Mumbai, India
+                                    <br><br>
+                                    <!-- <strong>Phone:</strong> +1 5589 55488 55<br> -->
+                                    <strong>Email:</strong><a href="mailto:bloombox.kjsce@somaiya.edu"> bloombox.kjsce@somaiya.edu</a>
+                                    <br>
+                                </p>
+                                <h3 style="font-size: 18px;">Follow Us</h3>
+                                <div class="social-links mt-3">
+                                    <a href="https://twitter.com/bloombox_kjsce" class="twitter"><i class="bx bxl-twitter"></i></a>
+                                    <a href="https://www.facebook.com/bloomboxkjsce/" class="facebook"><i class="bx bxl-facebook"></i></a>
+                                    <a href="https://www.instagram.com/bloombox_kjsce/" class="instagram"><i class="bx bxl-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/company/bloombox-e-cell-kjsce" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 footer-info">
+                                <h3 style="font-size: 18px;">HAVE ANY QUERY?</h3>
+                                <form action="/eSummitQuery" method="POST">
+                                    {% csrf_token %}
+                                    <div class="form-group">
+                                        <label for="name">Name</label>
+                                        <input type="text" class="form-control" id="name" name='name' placeholder="Enter Name" required>
+                                      </div>
+                                    <div class="form-group">
+                                      <label for="email">Email</label>
+                                      <input type="email" class="form-control" id="email" name='email' aria-describedby="emailHelp" placeholder="Enter email">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="number">Contact No</label>
+                                      <input type="tel" class="form-control" id="number" name='number' placeholder="Contact No" pattern=[0-9]{10}>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="textarea">Query</label>
+                                      <textarea type="textarea" class="form-control" id="textarea" name='textarea'></textarea>
+                                    </div>
+                                    <button type="submit" class="btn" style='margin: 0; color: white; background-color: #394047;'>Submit</button>
+                                  </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <br>
+            <div class="credits">
+                Designed by<a href="/"> BloomBox, E-Cell KJSCE</a>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a href="#" class="back-to-top">
+        <i class="icofont-simple-up"></i>
+    </a>
+    <!-- Preloader -->
+    <script src="{% static 'scripts/script/preloader.js' %}"></script>
+
+    <!-- Vendor JS Files -->
+    <script src="{% static 'scripts/basic/jquery.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/venobox.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/counterup.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/jquery.sticky.js' %}"></script>
+    <script src="{% static 'scripts/basic/aos.js' %}"></script>
+    <!-- Template Main JS File br -->
+    <script src="{% static 'scripts/script/main-index.js' %}"></script>
+
+    <script>
+        AOS.init();
+      </script>
+
+    <!-- <script src="index.js"></script> -->
+    <script src='https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js'></script>
+    <script>
+        particlesJS.load('particles-js','../static/scripts/script/particlesjs-config.json',
+        function(){
+            console.log('Loaded');
+        })
+    </script>
+</body>
+</html>
+
+<!--
+
+    <div class="shape-divi-bottom">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+        </svg>
+    </div>
+-->

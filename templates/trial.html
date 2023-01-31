@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>TemplateMo - Strip Bootstrap 4.0 HTML CSS Layout</title>
+<!--
+
+TemplateMo 482 Strip
+
+https://templatemo.com/tm-482-strip
+
+-->
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400">   <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="{% static 'styles/basic/bootstrap.min.css' %}">                                      <!-- Bootstrap style -->
+    <link rel="stylesheet" href="{% static 'styles/basic/esummit_event.css' %}">                                   <!-- Templatemo style -->
+    <!--link rel="stylesheet" href="static/styles/basic/bootstrap.min.css">                                      <!-- Bootstrap style -->
+    <!--link rel="stylesheet" href="static/styles/basic/esummit_event.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+          <![endif]-->
+    <style>
+      /*
+
+      Strip
+
+      http://www.templatemo.com/tm-482-strip
+
+      */
+
+
+
+
+
+
+
+      html {	font-size: 18px; }
+
+      body {
+      	background: url(../media/images/eSummit/strip-bg.jpg);
+      	color: rgba(255,255,255,0.95);
+      	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      	padding-left: 60px;
+      	padding-right: 60px;
+      	/*overflow-x: hidden;*/
+      }
+
+      p { line-height: 2; }
+
+      p:last-child { margin-bottom: 0; }
+
+      .tm-img { padding: 15px; }
+
+
+      .tm-container {
+      	background-color: white;
+      	padding: 30px 45px;
+      	max-width: 1600px;
+      }
+
+
+
+      .tm-page-content { margin-top: 255px; }
+
+
+
+      .tm-section {
+      	background-position: bottom right;
+      	background-size: cover;
+      	background-repeat: no-repeat;
+      	display: -webkit-flex;
+      	display: -ms-flexbox;
+      	display: flex;
+      	height: 600px;
+      }
+
+
+
+      #tm-section-2 {	background-image: url(../media/images/eSummit/strip-bg-02.jpg); }
+      #tm-section-3 {	background-image: url(../media/images/eSummit/strip-bg-03.jpg); }
+
+
+      .tm-section-header {
+      	font-weight: 300;
+      	margin-bottom: 30px;
+      }
+
+      .tm-white-curve-left,
+      .tm-white-curve-right {
+      	color: black;
+      	margin-top: 30px;
+      	margin-bottom: 30px;
+      }
+
+      /* Fix for Safari 9.0.3 on Mac */
+      .tm-white-curve-right {	margin-right: -1px; }
+
+      .tm-white-curve-left,
+      .tm-white-curve-right {
+      	display: -webkit-flex;
+      	display: -ms-flexbox;
+      	display: flex;
+      	padding-left: 0;
+      }
+
+      .tm-white-curve-left-rec,
+      .tm-white-curve-left-circle,
+      .tm-white-curve-right-rec,
+      .tm-white-curve-right-circle {
+      	position: absolute;
+      	background-color: white;
+      	height: 100%;
+      }
+
+      .tm-white-curve-left-rec,
+      .tm-white-curve-right-rec {
+      	width: 300px;
+      }
+
+      .tm-white-curve-left-circle {
+      	width: 520px;
+      	right: 0;
+      	border-top-right-radius: 50%;
+      	border-bottom-right-radius: 50%;
+      }
+
+      .tm-white-curve-right-rec {
+      	padding-right: 0;
+      	right: 0;
+      }
+
+      .tm-white-curve-right-circle {
+      	width: 520px;
+      	border-top-left-radius: 50%;
+      	border-bottom-left-radius: 50%;
+      }
+
+      .tm-white-curve-text {
+      	display: -webkit-flex;
+      	display: -ms-flexbox;
+      	display: flex;
+      	-webkit-flex-direction: column;
+      	    -ms-flex-direction: column;
+      	        flex-direction: column;
+      	-webkit-justify-content: center;
+      	    -ms-flex-pack: center;
+      	        justify-content: center;
+      	padding-left: 50px;
+      	width: 85%;
+      	position: relative;
+      	z-index: 100;
+      }
+
+      .tm-white-curve-right > .tm-white-curve-text {
+      	margin-right: 0;
+      	margin-left: auto;
+      }
+
+      .tm-flex-center {
+      	display: -webkit-flex;
+      	display: -ms-flexbox;
+      	display: flex;
+      	-webkit-align-items: center;
+      	    -ms-flex-align: center;
+      	        align-items: center;
+      	-webkit-justify-content: center;
+      	    -ms-flex-pack: center;
+      	        justify-content: center;
+      }
+
+      .thin-font { font-weight: 300; }
+
+
+
+
+
+      .blue-text { color: #00599a; }
+      .red-text { color: #882f33; }
+      .gray-text { color: #333333; }
+      .green-text {
+      	color: #2A8885;
+      	font-weight: 400;
+      }
+
+
+
+
+
+      @media screen and (max-width: 1300px) {
+      	.tm-white-curve-left-circle,
+      	.tm-white-curve-right-circle {
+      		width: 445px;
+      	}
+      	.tm-contact-left { padding: 25px; }
+      }
+
+      @media screen and (max-width: 1199px) {
+
+      	.tm-page-content { margin-top: 135px; }
+      	.tm-home-right { padding: 80px 50px 50px 60px; }
+
+      }
+
+      @media screen and (max-width: 1060px) {
+      	.tm-section {
+      		display: block;
+      		height: auto;
+      	}
+
+      	.tm-section .col-lg-7,
+      	.tm-section .col-lg-5 {
+      		width: 100%;
+      	}
+
+      	.tm-white-curve-left-rec,
+      	.tm-white-curve-right-rec {
+      		width: 60%;
+      	}
+
+      	.tm-white-curve-text {
+      		padding-top: 2em;
+      		padding-bottom: 2em;
+      	}
+
+      	.tm-white-curve-left-circle,
+      	.tm-white-curve-right-circle {
+      		width: 50%;
+      	}
+
+      	.tm-white-curve-left-circle { right: 1em; }
+      	.tm-white-curve-right-circle { left: 1em; }
+
+      	#tm-section-2,
+      	#tm-section-3 {
+      		display: -webkit-flex;
+      		display: -ms-flexbox;
+      		display: flex;
+      	    -webkit-flex-direction: column;
+      	        -ms-flex-direction: column;
+      	            flex-direction: column;
+      	    -webkit-justify-content: center;
+      	        -ms-flex-pack: center;
+      	            justify-content: center;
+      	}
+
+      	.tm-img { padding: 30px; }
+      }
+
+      @media screen and (max-width: 991px) {
+
+      	.tm-page-content { margin-top: 100px; }
+
+
+
+      }
+
+      @media screen and (max-width: 800px) {
+      	body {
+      		background: none;
+      		padding-left: 0;
+      		padding-right: 0;
+      	}
+      }
+
+      @media screen and (max-width: 550px) {
+      	.tm-container {
+      		padding-left: 30px;
+      		padding-right: 30px;
+      	}
+      }
+
+      @media screen and (max-width: 480px) {
+      	.tm-white-curve-text { padding: 1.5em 1em; }
+      	.tm-white-curve-right > .tm-white-curve-text {
+      	    padding-right: 0;
+      	    padding-left: 2em;
+      	}
+
+      	.tm-section-header {
+      		font-size: 1.8em;
+      		margin-bottom: 0.5em;
+      	}
+
+
+      }
+
+    </style>
+</head>
+
+    <body>
+        <div class="container tm-container">
+
+
+
+
+            <div class="tm-page-content">
+
+                <!-- #home -->
+
+
+                <!-- #services -->
+                <section id="tm-section-2" class="row tm-section">
+                    <div class="tm-flex-center col-xs-12 col-sm-6 col-md-6 col-lg-5 col-xl-6">
+                        <img src="../media/images/eSummit/strip-01.jpg" alt="Image" class="img-fluid tm-img">
+                    </div>
+
+                    <div class="tm-white-curve-right col-xs-12 col-sm-6 col-md-6 col-lg-7 col-xl-6">
+
+                        <div class="tm-white-curve-right-circle"></div>
+                        <div class="tm-white-curve-right-rec"></div>
+
+                        <div class="tm-white-curve-text">
+                            <h2 class="tm-section-header red-text">Our Services</h2>
+                            <p>Praesent consectetur dictum massa eu tincidunt. Nulla facilisi. Nam tincidunt nex diam eget sollicitudin. Quisque tincidunt ex sit amet metus ultricies, sed lobortis purus finibus.</p>
+                            <p class="thin-font">Morbi nex felis rutrum, faucibus odio sed, ullamcorper risus. Sed id condimentum nequq, at iaculis ex. Praesent faucibus viverra ante id auctor. Pellentesque at risus ut arcu blandit consectetur.</p>
+                        </div>
+
+                    </div>
+                </section> <!-- #services -->
+
+                <!-- #about -->
+                <section id="tm-section-3" class="row tm-section">
+                    <div class="tm-white-curve-left col-xs-12 col-sm-6 col-md-6 col-lg-7 col-xl-6">
+                        <div class="tm-white-curve-left-rec">
+
+                        </div>
+                        <div class="tm-white-curve-left-circle">
+
+                        </div>
+                        <div class="tm-white-curve-text">
+                            <h2 class="tm-section-header gray-text">About our company</h2>
+                            <p class="thin-font">Praesent consectetur dictum massa eu tincidunt. Nulla facilisi. Nam tincidunt nex diam eget sollicitudin. Quisque tincidunt ex sit amet metus ultricies, sed lobortis purus finibus.</p>
+                            <p>Morbi nex felis rutrum, faucibus odio sed, ullamcorper risus. Sed id condimentum nequq, at iaculis ex. Praesent faucibus viverra ante id auctor. Pellentesque at risus ut arcu blandit consectetur.</p>
+                        </div>
+
+                    </div>
+                    <div class="tm-flex-center col-xs-12 col-sm-6 col-md-6 col-lg-5 col-xl-6">
+                        <img src="../media/images/eSummit/strip-02.jpg" alt="Image" class="img-fluid tm-img">
+                    </div>
+                </section> <!-- #about -->
+
+
+
+            </div>
+
+        </div> <!-- .container -->
+
+
+
+
+    </body>
+    </html>

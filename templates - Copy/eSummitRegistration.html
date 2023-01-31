@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Summit Registration</title>
+    <link rel="icon" type="image/ico" href="../media/images/eSummit/eS-white.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        .btn{
+        font-family: "Raleway", sans-serif;
+        background-color: white;
+        color: black;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 14px 32px;
+        border-radius: 4px;
+        transition: 0.5s;
+        line-height: 1;
+        margin: 10px 10px;
+        -webkit-animation-delay: 0.8s;
+        animation-delay: 0.8s;
+        
+    }
+
+    .btn:hover {
+        background: #2c2c2c;
+        color:white;
+    }
+
+    @media only screen and (max-width:768px){
+        .row>div{
+            left:0 !important;
+        }
+
+        .illu{
+            display:none;
+        }
+
+    }
+
+    label{
+        color: white;
+    }
+    #particles-js{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background-color: #000;
+        background-image: url('');
+        background-size: cover;
+        /* background-position: 50% 50%; */
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+
+    h4{
+        color:black;
+        background-color: white;
+        border-radius: 25px;
+        width: fit-content;
+        height: fit-content;
+        font-size: 27px;
+        font-weight: 700;
+        padding: 8px 13px;
+    }
+
+    .form-group input{
+       /* border:0px;
+        border-radius: 0px;
+        border-bottom: 1px solid white;*/
+        background-color: rgba(0,0,0,0) !important;
+        color:white !important;
+    }
+    </style>
+</head>
+<body>
+    
+        <div id="particles-js"></div>
+        <div class='container'>
+            <br><br>
+            {% if reg_conf %}
+                            <center><div style="color:white;
+                            background-color: green;
+                            border-radius: 25px;
+                            width: fit-content;
+                            height: fit-content;
+                            font-size: 17px;
+                            padding: 6px 8px;">{{ reg_conf }}</div></center><br>
+            {% endif %}
+            {% if eventId in closed_events %}
+            <center><div style="color:white;
+                background-color: green;
+                            border-radius: 25px;
+                            width: fit-content;
+                            height: fit-content;
+                            font-size: 17px;
+                            padding: 6px 8px;
+                            margin-top: 20%;">Sorry! The registration for this event is closed</div></center><br>
+            {% else %}
+            <div class='row'>
+                <!-- <div class='col-md-6'>
+                    <img src='../media/images/eSummit/ill1.png' class='img-fluid illu'>
+                </div> -->
+                <div class='col-md-6' style="margin:auto;">
+                    <div>
+                        <center><h4>{{eventName}}</h4></center><br>
+                        
+                        <form action="/ESummitRegistration/{{eventId}}" method="POST">
+                        {% csrf_token %}
+                            {% if eventType == 1 %}
+                                <div class="form-group form-group-inline">
+                                    <label for="name">Name:</label>
+                                    <input class="form-control" id="name" name="name" type="text" placeholder="Enter Name..." maxlength="50" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email:</label>
+                                    <input class="form-control" id="email" name="email" type="email" placeholder="abc@example.com" aria-describedby="emailHelp" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact">Contact:</label>
+                                    <input class="form-control" id="contact" name="contact" type="tel" placeholder="Enter a 10 digit mobile number" pattern="[0-9]{10}" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="college">College:</label>
+                                    <input class="form-control" id="college" name="college" type="text" placeholder="Enter College Name..." maxlength="50" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="branch">Branch:</label>
+                                    <input class="form-control" id="branch" name="branch" type="text" placeholder="Enter Your Branch..." maxlength="50" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="branch">Year of Study:</label>
+                                    <input class="form-control" id="year" name="year" type="text" placeholder="Enter Your Year of Study..." maxlength="20" required>
+                                </div>
+                            {% else %}
+                                <div class="form-group">
+                                    <label for="nameOfTeam">Team Name:</label>
+                                    <input type="text" class="form-control" id="nameOfTeam" name="nameOfTeam" placeholder="Enter Your Team Name" maxlength="50" required>
+                                </div>
+                                <div class="form-group form-group-inline">
+                                    <label for="leaderName">Team Leader Name:</label>
+                                    <input type="text" class="form-control" id="leaderName" name="leaderName" placeholder="Enter Group Leader Name..." maxlength="50" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="leaderEmail">Team Leader Email:</label>
+                                    <input type="email" class="form-control" id="leaderEmail" name="leaderEmail" placeholder="abc@example.com" aria-describedby="emailHelp" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="leaderContact">Team Leader Contact:</label>
+                                    <input class="form-control" id="leaderContact" name="leaderContact" type="tel" placeholder="Enter a 10 digit mobile number" pattern="[0-9]{10}" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="Hcollege">College Name:</label>
+                                    <input type="text" class="form-control" id="Hcollege" name="Hcollege" placeholder="Enter College Name..." maxlength="50" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="altEmail">Alternate Email ID:</label>
+                                    <input type="email" class="form-control" id="altEmail" name="alternateEmail" placeholder="abc@example.com" aria-describedby="emailHelp" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="altContact">Alternate Contact:</label>
+                                    <input class="form-control" id="altContact" name="alternateContact" type="tel" placeholder="Enter a 10 digit mobile number" pattern="[0-9]{10}" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="nameOfMembers">Name of Team Members:</label>
+                                    <input type="text" class="form-control" id="nameOfMembers" name="nameOfMembers" placeholder="Names should be comma separated..." required>
+                                </div>
+                            {% endif %}
+                            <div class='d-flex justify-content-center'>
+                                <button  type="submit" class="btn btn-seemore">Register</button>
+                                <button type='reset' class='btn'>Reset</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+        </div>
+
+    <script src='https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js'></script>
+    <script>
+        particlesJS.load('particles-js','../static/scripts/script/particlesjs-config.json',
+        function(){
+            console.log('Loaded');
+        })
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
