@@ -23,7 +23,8 @@ def trial2(request):
 
 def campus(request):
     companies = Campus.objects.all().order_by("name")
-    active_companies = ["Indicverse", "CoS", "Blockwee", "Pressx", "Caarya Communities", "T-Space", "Vision Mastermind", "LAUNCHiT", "Covero Essentials"]
+    active_companies = ["Indicverse", "CoS", "Blockwee", "Pressx", "Caarya Communities",
+                        "T-Space", "Vision Mastermind", "LAUNCHiT", "Covero Essentials"]
     converted_to_startup = []
     noSaturation = ["Covero Essentials", ]
     context = {'companies': companies, 'active_companies': active_companies,
@@ -137,7 +138,7 @@ def about(request):
 
 
 def ESummit(request):
-    return render(request, 'eSummit.html')
+    return render(request, 'esummit-comingsoon.html')
 
 
 def eSummitRegistration(request, eventId):

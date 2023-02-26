@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142291179-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-142291179-2');
+    </script>
+    <title>BloomBox, E-Cell KJSCE</title>
+    <link rel="icon" type="image/ico" href="../media/images/basic/BloomBox, E-Cell KJSCE - Logo Small.png">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <meta name="description"
+        content="BloomBox, E-Cell KJSCE is the student run non-profit organization Entrepreneurship promoting body at K. J. Somaiya College of Engineering, Mumbai">
+    <meta name="google-site-verification" content="sfZdBesrUXPWwnmytZsgEymdT_Brz2EvjYQ36cPVM94">
+    <meta name="keywords"
+        content="BloomBox, E-Cell, ecell, KJSCE, k j  somaiya college of engineering, entrepreneurship, edc, entrepreneurship development cell, entrepreneurship cell">
+    <meta name="robots" content="INDEX, FOLLOW">
+    <meta name="author" content="Team BloomBox">
+    <meta name="geo.region" content="IN">
+    <link rel="canonical" href="">
+
+    <!--CSS-->
+    <link href="{% static 'styles/basic/preloader.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/basic/aos.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/basic/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/basic/icofont/icofont.min.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/basic/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/basic/owl.carousel.min.css' %}" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="{% static 'styles/css/esummit.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/css/esummit-comingsoon.css' %}" rel="stylesheet">
+
+
+
+</head>
+
+<body onload="preloader();">
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex align-items-center">
+        <div class="container">
+            <!-- The main logo is shown in mobile version only. The centered nav-logo in nav menu is displayed in desktop view  -->
+            <div class="logo d-block d-lg-none">
+                <a href="{% url 'index' %}"><img src="../media/images/basic/BloomBox, E-Cell KJSCE - Logo Small.png"
+                        alt="" class="img-fluid"></a>
+            </div>
+            <nav class="nav-menu d-none d-lg-block">
+                <ul class="nav-inner">
+                    <li><a href="{% url 'index' %}">Home<i class="icofont-home"></i></a></li>
+                    <li><a href="{% url 'campus' %}">Campus Company<i class="icofont-company"></i></a></li>
+                    <li><a href="{% url 'events' %}">Events<i class="icofont-brand-slideshare"></i></a></li>
+                    <li><a href="{% url 'enspire' %}">Enspire<i class="icofont-ebook"></i></a></li>
+                    <li class='centreLogo'><a href="{% url 'index' %}"><img style="height:40px;width:40px;"
+                                src="../media/images/basic/BloomBox, E-Cell KJSCE - Logo Small.png" alt=""></a> </li>
+                    <li class="active"><a href="{% url 'ESummit' %}">E-Summit 2023<i class="icofont-flag-alt-1"></i></a>
+                    </li>
+                    <li><a href="{% url 'partners' %}">Partners<i class="icofont-handshake-deal"></i></a></li>
+                    <li><a href="{% url 'team' %}">Team Members<i class="icofont-people"></i></a></li>
+                    <li><a href="{% url 'about' %}">About<i class="icofont-question"></i></a></li>
+                </ul>
+            </nav>
+            <!--nav-menu -->
+        </div>
+    </header>
+    <!-- End Header -->
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="container" class="container-preloader">
+            <div class="animation-preloader">
+                <div class="spinner"></div>
+                <div class="txt-loading">
+                    <span preloader-text="E" class="characters">E</span>
+
+                    <span preloader-text="-" class="characters">-</span>
+
+                    <span preloader-text="S" class="characters">S</span>
+
+                    <span preloader-text="U" class="characters">U</span>
+
+                    <span preloader-text="M" class="characters">M</span>
+
+                    <span preloader-text="M" class="characters">M</span>
+
+                    <span preloader-text="I" class="characters">I</span>
+
+                    <span preloader-text="T" class="characters">T</span>
+
+                    <span preloader-text="'" class="characters">'</span>
+
+                    <span preloader-text="2" class="characters">2</span>
+
+                    <span preloader-text="3" class="characters">3</span>
+                </div>
+            </div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+        </div>
+    </div>
+
+
+
+    <div class="hero-container">
+        <h1 style="color: white; font-weight: bolder;">Coming Soon!!</h1>
+        <h1 style="color: white; font-weight: bolder;">(24th - 25th March)</h1>
+        <img class='img-fluid banner-logo' src="../media/images/eSummit/esummit-07-white-07_blackv6_1.png" alt="">
+    </div>
+
+
+
+
+    <!-- Preloader -->
+    <script src="{% static 'scripts/script/preloader.js' %}"></script>
+    <script src="https://kit.fontawesome.com/be4c1851d0.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="{% static 'scripts/basic/jquery.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/venobox.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/counterup.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/jquery.sticky.js' %}"></script>
+    <script src="{% static 'scripts/basic/aos.js' %}"></script>
+    <!-- Template Main JS File -->
+    <!-- <script src="{% static 'scripts/script/main-index.js' %}"></script> -->
+    <script src="{% static 'scripts/script/esummit-comingsoon.js' %}"></script>
+
+</body>
+
+</html>

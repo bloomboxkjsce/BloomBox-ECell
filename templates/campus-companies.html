@@ -56,22 +56,26 @@
         <div class="container">
             <!-- The main logo is shown in mobile version only. The centered nav-logo in nav menu is displayed in desktop view  -->
             <div class="logo d-block d-lg-none">
-                <a href="{% url 'index' %}"><img src="../media/images/basic/BloomBox, E-Cell KJSCE - Logo Small.png" alt="" class="img-fluid"></a>
+                <a href="{% url 'index' %}"><img src="../media/images/basic/BloomBox, E-Cell KJSCE - Logo Small.png"
+                        alt="" class="img-fluid"></a>
             </div>
             <nav class="nav-menu d-none d-lg-block">
                 <ul class="nav-inner">
                     <li><a href="{% url 'index' %}">Home<i class="icofont-home"></i></a></li>
-                    <li class="active"><a href="{% url 'campus' %}">Campus Company<i class="icofont-company"></i></a></li>
+                    <li class="active"><a href="{% url 'campus' %}">Campus Company<i class="icofont-company"></i></a>
+                    </li>
                     <li><a href="{% url 'events' %}">Events<i class="icofont-brand-slideshare"></i></a></li>
                     <li><a href="{% url 'enspire' %}">Enspire<i class="icofont-ebook"></i></a></li>
-                    <li class='centreLogo'><a href="{% url 'index' %}"><img style="height:40px;width:40px;max-width: none;" src="../media/images/basic/BloomBox, E-Cell KJSCE - Logo Small.png" alt=""></a></li>
-                    <li><a href="{% url 'ESummit' %}">E-Summit 2022<i class="icofont-flag-alt-1"></i></a></li>
+                    <li class='centreLogo'><a href="{% url 'index' %}"><img
+                                style="height:40px;width:40px;max-width: none;"
+                                src="../media/images/basic/BloomBox, E-Cell KJSCE - Logo Small.png" alt=""></a></li>
+                    <li><a href="{% url 'ESummit' %}">E-Summit 2023<i class="icofont-flag-alt-1"></i></a></li>
                     <li><a href="{% url 'partners' %}">Partners<i class="icofont-handshake-deal"></i></a></li>
                     <li><a href="{% url 'team' %}">Team Members<i class="icofont-people"></i></a></li>
                     <li><a href="{% url 'about' %}">About<i class="icofont-question"></i></a></li>
                 </ul>
             </nav>
-        <!--nav-menu -->
+            <!--nav-menu -->
         </div>
     </header>
     <!-- End Header -->
@@ -104,8 +108,9 @@
                                 <div class='event-title'>
                                     <h1>{{ company.name }}
                                         <span style="font-size: x-small; -webkit-box-shadow: 5px 5px 5px -4px #000000;
-                                        box-shadow: 5px 5px 5px -4px #000000; " class="badge badge-pill badge-warning">Converted To Startup</span>
-                                        </h1>
+                                        box-shadow: 5px 5px 5px -4px #000000; "
+                                            class="badge badge-pill badge-warning">Converted To Startup</span>
+                                    </h1>
                                 </div>
                                 <div class="description">
                                     <div class="desc-content">
@@ -115,7 +120,8 @@
                                     </div>
                                     <br>
                                     <div class="student"><b>Student(s):</b><br>
-                                    <span>{{company.students}}</span></div>
+                                        <span>{{company.students}}</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -154,8 +160,9 @@
                                 <div class='event-title'>
                                     <h1>{{ company.name }}
                                         <span style="font-size: x-small; -webkit-box-shadow: 5px 5px 5px -4px #000000;
-                                        box-shadow: 5px 5px 5px -4px #000000; " class="badge badge-pill badge-success">Active</span>
-                                        </h1>
+                                        box-shadow: 5px 5px 5px -4px #000000; "
+                                            class="badge badge-pill badge-success">Active</span>
+                                    </h1>
                                 </div>
                                 <div class="description">
                                     <div class="desc-content">
@@ -165,7 +172,8 @@
                                     </div>
                                     <br>
                                     <div class="student"><b>Student(s):</b><br>
-                                    <span>{{company.students}}</span></div>
+                                        <span>{{company.students}}</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -196,7 +204,7 @@
                             <div class='event-info'>
                                 <div class='event-title'>
                                     <h1>{{ company.name }}
-                                        </h1>
+                                    </h1>
                                 </div>
                                 <div class="description">
                                     <div class="desc-content">
@@ -206,7 +214,8 @@
                                     </div>
                                     <br>
                                     <div class="student"><b>Student(s):</b><br>
-                                    <span>{{company.students}}</span></div>
+                                        <span>{{company.students}}</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -218,7 +227,7 @@
             <!--Company Card Ends-->
             {% endfor %}
         </div>
-      </div>
+    </div>
 
     <!-- ======= Footer ======= -->
     <footer id="footer">
@@ -231,12 +240,17 @@
                                 <h4>Useful Links</h4>
                                 <ul>
                                     <li><i class="bx bx-chevron-right"></i> <a href="{% url 'index' %}">Home</a></li>
-                                    <li><i class="bx bx-chevron-right"></i><a href="{% url 'campus' %}">Campus Company</a></li>
+                                    <li><i class="bx bx-chevron-right"></i><a href="{% url 'campus' %}">Campus
+                                            Company</a></li>
                                     <li><i class="bx bx-chevron-right"></i><a href="{% url 'events' %}">Events</a></li>
-                                    <li><i class="bx bx-chevron-right"></i><a href="{% url 'enspire' %}">Enspire</a></li>
-                                    <li><i class="bx bx-chevron-right"></i><a href="{% url 'ESummit' %}">E-Summit '21</a></li>
-                                    <li><i class="bx bx-chevron-right"></i><a href="{% url 'partners' %}">Partners</a></li>
-                                    <li><i class="bx bx-chevron-right"></i><a href="{% url 'team' %}">Team Members</a></li>
+                                    <li><i class="bx bx-chevron-right"></i><a href="{% url 'enspire' %}">Enspire</a>
+                                    </li>
+                                    <li><i class="bx bx-chevron-right"></i><a href="{% url 'ESummit' %}">E-Summit
+                                            '21</a></li>
+                                    <li><i class="bx bx-chevron-right"></i><a href="{% url 'partners' %}">Partners</a>
+                                    </li>
+                                    <li><i class="bx bx-chevron-right"></i><a href="{% url 'team' %}">Team Members</a>
+                                    </li>
                                     <li><i class="bx bx-chevron-right"></i><a href="{% url 'about' %}">About</a></li>
                                 </ul>
                             </div>
@@ -246,17 +260,22 @@
                                     KJ Somaiya College of Engineering<br>Vidyanagar, Vidyavihar<br> Mumbai, India
                                     <br><br>
                                     <!-- <strong>Phone:</strong> +1 5589 55488 55<br> -->
-                                    <strong>Email:</strong><a href="mailto:bloombox.kjsce@somaiya.edu"> bloombox.kjsce@somaiya.edu</a>
+                                    <strong>Email:</strong><a href="mailto:bloombox.kjsce@somaiya.edu">
+                                        bloombox.kjsce@somaiya.edu</a>
                                     <br>
                                 </p>
                             </div>
                             <div class="col-lg-4 col-md-6 footer-info">
                                 <h3>Follow Us</h3>
                                 <div class="social-links mt-3">
-                                    <a href="https://twitter.com/bloombox_kjsce" class="twitter"><i class="bx bxl-twitter"></i></a>
-                                    <a href="https://www.facebook.com/bloomboxkjsce/" class="facebook"><i class="bx bxl-facebook"></i></a>
-                                    <a href="https://www.instagram.com/bloombox_kjsce/" class="instagram"><i class="bx bxl-instagram"></i></a>
-                                    <a href="https://www.linkedin.com/company/bloombox-e-cell-kjsce" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                                    <a href="https://twitter.com/bloombox_kjsce" class="twitter"><i
+                                            class="bx bxl-twitter"></i></a>
+                                    <a href="https://www.facebook.com/bloomboxkjsce/" class="facebook"><i
+                                            class="bx bxl-facebook"></i></a>
+                                    <a href="https://www.instagram.com/bloombox_kjsce/" class="instagram"><i
+                                            class="bx bxl-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/company/bloombox-e-cell-kjsce" class="linkedin"><i
+                                            class="bx bxl-linkedin"></i></a>
                                 </div>
                             </div>
                         </div>
