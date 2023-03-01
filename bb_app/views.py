@@ -138,7 +138,7 @@ def about(request):
 
 
 def ESummit(request):
-    return render(request, 'esummit-comingsoon.html')
+    return render(request, 'eSummit.html')
 
 
 def eSummitRegistration(request, eventId):
